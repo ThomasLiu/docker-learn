@@ -1,0 +1,15 @@
+logs/
+npm-debug.log
+yarn-error.log
+node_modules/
+yarn.lock
+coverage/
+.idea/
+.vscode/
+run/
+.DS_Store
+.vscode/
+tmp_posters/*.png
+/*.code-workspace
+
+shop-node-api.*
