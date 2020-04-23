@@ -12,6 +12,18 @@ docker inspect NAME|ID # 获取容器/镜像的元数据
 docker build -t image_test . # 使用当前目录的 docker 文件构建 TAG 为 image_test 的镜像
 ```
 
+## Docker 实践尝试
+
+参考资料
+
+- [Docker + Jenkins 部署完整 node 项目](https://segmentfault.com/a/1190000021462867?utm_source=tag-newest)
+
+## 团队化 Docker 开发
+
+参考资料
+
+- [用 Docker 快速配置前端开发环境](http://dockone.io/article/1714)
+
 ## Docker 构建优化
 
 ### 分析构建过程
@@ -38,7 +50,10 @@ docker build -t YOUR_IMAGE_NAME:YOUR_TAG -f YOUR_DOCKERFILE --progress plain .
 
 ```sh
 # 忽略一些 du 的错误
-docker run -it 2719554387f3 du -sh /* 2>&1 | grep -v "cannot access"
+docker run -it YOUR_IMAGE_NAME:YOUR_TAG du -sh /* 2>&1 | grep -v "cannot access"
+
+# 查看某个具体文件夹
+docker run -it YOUR_IMAGE_NAME:YOUR_TAG du -sh /usr/* | grep -v "cannot access"
 ```
 
 参考资料
