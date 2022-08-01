@@ -2,6 +2,8 @@
 
 docker learn code
 
+[安装docker](https://www.docker.com/products/docker-desktop/)
+
 常用命令, [Docker 命令大全](https://www.runoob.com/docker/docker-command-manual.html)
 
 ```sh
